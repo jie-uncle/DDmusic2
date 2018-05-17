@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_margin="@dimen/size_eight"
+    android:id="@+id/item_musicList_lay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+         <ImageView
+            android:id="@+id/remote_ktvmusic_image"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/remote_ktvmusic_item1"
+                android:text="item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/remote_ktvmusic_item2"
+                android:text="item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/remote_ktvmusic_item3"
+                android:text="item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+</LinearLayout>

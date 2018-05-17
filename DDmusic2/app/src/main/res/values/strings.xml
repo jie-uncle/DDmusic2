@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">DDmusic2</string>
+    <string name="welcome_text">跳过</string>
+
+
+    <string name="seek">搜索</string>
+    <string name="localmusic">本地音乐</string>
+    <string name="remotemusic">榜单</string>
+    <string name="radiomusic">电台频道</string>
+
+    <string name="like">喜欢</string>
+    <string name="download">下载</string>
+    <string name="recently">最近</string>
+    <string name="welcome">欢迎DD音乐</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <array name="fragment_list">
+        <item>音乐</item>
+        <item>MV</item>
+        <item>直播</item>
+    </array>
 </resources>

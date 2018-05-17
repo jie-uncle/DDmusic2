@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/fragment_radiomusc_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarbg"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+        <ImageView
+            android:id="@+id/fragment_loadMusic_back"
+            android:layout_width="@dimen/image_size_twenty_five"
+            android:layout_height="@dimen/image_size_twenty_five"
+            android:src="@drawable/back"/>
+        <TextView
+            android:textColor="@color/toolbar_text_color"
+            android:textSize="@dimen/toolbar_text_size"
+            app:tabMode="scrollable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/radiomusic"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_below="@id/fragment_radiomusc_toolbar"
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <com.jie.ddmusic2.ScrollViewTabIndicator
+                android:id="@+id/tab2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ScrollViewTabIndicator_height"
+                android:background="@android:color/white"
+                android:textAppearance="@style/style_tab_selector"
+
+                app:tpi_mode="fixed"
+                />
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/size_five"
+                android:id="@+id/fragment_radio_view1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:background="@color/view_color"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/view_height"/>
+
+                    <TextView
+                        android:paddingRight="@dimen/size_five"
+                        android:paddingLeft="@dimen/size_five"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="推荐"/>
+                    <View
+                        android:background="@color/view_color"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/view_height"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/fragment_radio_tuijian_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/size_five"
+                android:id="@+id/fragment_radio_view2"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:background="@color/view_color"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/view_height"/>
+
+                    <TextView
+                        android:paddingRight="@dimen/size_five"
+                        android:paddingLeft="@dimen/size_five"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="时光"/>
+                    <View
+                        android:background="@color/view_color"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/view_height"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/fragment_radio_shiguang_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/size_five"
+                android:id="@+id/fragment_radio_view3"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:background="@color/view_color"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/view_height"/>
+
+                    <TextView
+                        android:paddingRight="@dimen/size_five"
+                        android:paddingLeft="@dimen/size_five"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="风格"/>
+                    <View
+                        android:background="@color/view_color"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/view_height"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/fragment_radio_fengge_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/size_five"
+                android:id="@+id/fragment_radio_view4"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:background="@color/view_color"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/view_height"/>
+
+                    <TextView
+                        android:paddingRight="@dimen/size_five"
+                        android:paddingLeft="@dimen/size_five"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="心情"/>
+                    <View
+                        android:background="@color/view_color"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/view_height"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/fragment_radio_xinqing_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/size_five"
+                android:id="@+id/fragment_radio_view5"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:background="@color/view_color"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/view_height"/>
+
+                    <TextView
+                        android:paddingRight="@dimen/size_five"
+                        android:paddingLeft="@dimen/size_five"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="语种"/>
+                    <View
+                        android:background="@color/view_color"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/view_height"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/fragment_radio_yuzhong_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <com.jie.ddmusic2.ScrollViewTabIndicator
+        android:layout_below="@id/fragment_radiomusc_toolbar"
+        android:visibility="invisible"
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ScrollViewTabIndicator_height"
+        android:background="@android:color/white"
+        android:textAppearance="@style/style_tab_selector"
+        app:tpi_mode="fixed"
+        />
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/fragment_radio_progressbar_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

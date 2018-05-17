@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_net_music"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/size_eight"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/size_five"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/item_net_music_tital"
+            android:textSize="@dimen/text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+
+            />
+        <TextView
+            android:id="@+id/item_net_music_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/item_net_music_moremenu"
+        android:layout_marginRight="@dimen/size_five"
+        android:layout_gravity="center_vertical"
+        android:layout_width="@dimen/image_size_thirty"
+        android:layout_height="@dimen/image_size_thirty"
+        android:src="@drawable/more_menu"
+        />
+
+
+</LinearLayout>

@@ -3,4 +3,14 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="tablayout_text_selected">#FFFFFF</color>
+    <color name="tablayout_text_unselected">#bebebe</color>
+    <color name="toolbarbg">#0090ff</color>
+    <color name="navigationbg">#9dc9f5</color>
+    <color name="view_color">#e4e4e4</color>
+    <color name="toolbar_text_color">#ffffff</color>
+    <color name="text_color_white">#ffffff</color>
+    <color name="text_color_green">#16BC5C</color>
+
+
 </resources>

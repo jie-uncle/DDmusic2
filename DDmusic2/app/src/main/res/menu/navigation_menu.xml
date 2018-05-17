@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+
+  <group android:id="@+id/dfg">
+    <item
+        android:id="@+id/only_WiFi_network"
+        android:icon="@drawable/only_wifi_network"
+        app:actionLayout="@layout/menu_switch_wifi"
+        android:title="仅WiFi联网" />
+    <item
+
+        android:id="@+id/desktop_lyrics"
+        android:icon="@drawable/desktop_lyrics"
+        android:title="桌面歌词" />
+    <item
+        android:id="@+id/lock_screen_lyrics"
+        android:icon="@drawable/lock_screen_lyrics"
+        android:title="锁屏歌词" />
+  </group>
+    <group android:id="@+id/sd"
+         >
+
+
+    <item
+        android:id="@+id/timed_close"
+        android:icon="@drawable/timed_close"
+        android:title="定时关闭" />
+    <item
+        android:id="@+id/clear_the_cache"
+        android:icon="@drawable/clear_the_cache"
+        android:title="清除缓存" />
+    <item
+        android:id="@+id/about_us"
+        android:icon="@drawable/about_us"
+        android:title="关于我们" />
+    <item
+        android:id="@+id/feedback"
+        android:icon="@drawable/feedback"
+        android:title="意见反馈" />
+    </group>
+    <group android:id="@+id/fg"
+
+        >
+        <item android:checkable="true"
+            android:icon="@drawable/exit"
+            android:id="@+id/exit"
+            android:title="退出" />
+    </group>
+
+</menu>
